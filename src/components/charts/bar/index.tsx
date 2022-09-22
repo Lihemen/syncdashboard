@@ -7,6 +7,5 @@ const Bar = () => {
       <div>Bar</div>
     </OpacityContainer>
   );
-};
 
 export default Bar;

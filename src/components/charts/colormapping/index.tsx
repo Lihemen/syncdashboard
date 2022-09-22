@@ -7,6 +7,5 @@ const ColorMapping = () => {
       <div>ColorMapping</div>
     </OpacityContainer>
   );
-};
-
+  
 export default ColorMapping;

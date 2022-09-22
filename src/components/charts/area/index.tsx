@@ -10,4 +10,3 @@ const Area = () => {
 };
 
 export default Area;
-

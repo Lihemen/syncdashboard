@@ -4,6 +4,7 @@ import { Navigate, Routes, Route, useLocation } from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { AnimatePresence } from 'framer-motion';
+
 import './App.css';
 
 import {
