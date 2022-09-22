@@ -37,7 +37,6 @@ function App() {
   const { activeMenu } = useAppContext();
   const location = useLocation();
 
-  return (
     <div className='flex relative dark:bg-main-dark-bg'>
       <div className='fixed right-6 bottom-4' style={{ zIndex: 9999 }}>
         <TooltipComponent content='Settings' position='TopLeft'>
@@ -95,7 +94,6 @@ function App() {
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </AnimatePresence>
-
   );
 }
 
