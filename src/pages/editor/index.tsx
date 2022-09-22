@@ -1,7 +1,13 @@
 import React from 'react';
+import OpacityContainer from '../../components/opacitycontainer';
 
 const Editor = () => {
-  return <div>Editor</div>;
+  return (
+    <OpacityContainer>
+      <div>Editor</div>
+    </OpacityContainer>
+  );
 };
 
 export default Editor;
+

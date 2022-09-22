@@ -1,7 +1,13 @@
 import React from 'react';
+import OpacityContainer from '../../components/opacitycontainer';
 
 const Orders = () => {
-  return <div>Orders</div>;
+  return (
+    <OpacityContainer>
+      <div>Orders</div>
+    </OpacityContainer>
+  );
 };
 
 export default Orders;
+

@@ -1,7 +1,13 @@
 import React from 'react';
+import OpacityContainer from '../../components/opacitycontainer';
 
 const Calendar = () => {
-  return <div>Calendar</div>;
+  return (
+    <OpacityContainer>
+      <div>Calendar</div>
+    </OpacityContainer>
+  );
 };
 
 export default Calendar;
+

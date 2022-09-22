@@ -1,7 +1,13 @@
 import React from 'react';
+import OpacityContainer from '../../components/opacitycontainer';
 
 const Kanban = () => {
-  return <div>Kanban</div>;
+  return (
+    <OpacityContainer>
+      <div>Kanban</div>
+    </OpacityContainer>
+  );
 };
 
 export default Kanban;
+
