@@ -1,12 +1,13 @@
 import React from 'react';
 import OpacityContainer from '../../components/opacitycontainer';
 
-const Editor = () => {
+const ColorPicker = () => {
   return (
     <OpacityContainer>
-      <div>Editor</div>
+      <div>ColorPicker</div>
     </OpacityContainer>
   );
 };
 
-export default Editor;
+export default ColorPicker;
+

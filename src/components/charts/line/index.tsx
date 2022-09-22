@@ -1,7 +1,12 @@
 import React from 'react';
+import { OpacityContainer } from '../../';
 
 const Line = () => {
-  return <div>Line</div>;
+  return (
+    <OpacityContainer>
+      <div>Line</div>
+    </OpacityContainer>
+  );
 };
 
 export default Line;

@@ -1,7 +1,12 @@
 import React from 'react';
+import { OpacityContainer } from '../../';
 
 const Bar = () => {
-  return <div>Bar</div>;
+  return (
+    <OpacityContainer>
+      <div>Bar</div>
+    </OpacityContainer>
+  );
 };
 
 export default Bar;

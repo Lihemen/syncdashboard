@@ -1,7 +1,12 @@
 import React from 'react';
+import { OpacityContainer } from '../../';
 
 const ColorMapping = () => {
-  return <div>ColorMapping</div>;
+  return (
+    <OpacityContainer>
+      <div>ColorMapping</div>
+    </OpacityContainer>
+  );
 };
 
 export default ColorMapping;

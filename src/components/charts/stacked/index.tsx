@@ -1,7 +1,12 @@
 import React from 'react';
+import { OpacityContainer } from '../../';
 
 const Stacked = () => {
-  return <div>Stacked</div>;
+  return (
+    <OpacityContainer>
+      <div>Stacked</div>
+    </OpacityContainer>
+  );
 };
 
 export default Stacked;
