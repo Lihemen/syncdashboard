@@ -10,4 +10,3 @@ const ECommerce = () => {
 };
 
 export default ECommerce;
-
