@@ -1,13 +1,13 @@
 import React from 'react';
 import OpacityContainer from '../../components/opacitycontainer';
 
-const Employees = () => {
+const ColorPicker = () => {
   return (
     <OpacityContainer>
-      <div>Employees</div>
+      <div>ColorPicker</div>
     </OpacityContainer>
   );
 };
 
-export default Employees;
+export default ColorPicker;
 

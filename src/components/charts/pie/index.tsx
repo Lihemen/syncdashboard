@@ -1,7 +1,13 @@
 import React from 'react';
+import { OpacityContainer } from '../../';
 
 const Pie = () => {
-  return <div>Pie</div>;
+  return (
+    <OpacityContainer>
+      <div>Pie</div>
+    </OpacityContainer>
+  );
 };
 
 export default Pie;
+
