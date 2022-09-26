@@ -12,10 +12,13 @@ body {
 
 @layer components {
   .routeHeader {
-    @apply dark:bg-main-bg bg-main-bg min-h-screen w-full;
+    @apply dark:bg-main-dark-bg bg-main-bg min-h-screen w-full;
   }
   .link {
     @apply flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg m-2 text-base;
+  }
+  .pageWrapper {
+    @apply m-2 md:m-10 p-4 md:p-10 bg-white rounded-3xl;
   }
 }
 

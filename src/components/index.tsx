@@ -13,6 +13,7 @@ export { default as PieChart } from './charts/pie';
 export { default as Pyramid } from './charts/pyramid';
 export { default as SparkLine } from './charts/sparkline';
 export { default as Stacked } from './charts/stacked';
+export { default as StackedChart } from './charts/stackedchart';
 // End Charts
 
 export { default as Chat } from './chat';

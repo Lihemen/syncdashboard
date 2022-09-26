@@ -5,7 +5,11 @@ import { BsChatLeft } from 'react-icons/bs';
 import { RiNotification3Line } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { useAppContext, useScreenSizeContext } from '../../context/provider';
+import {
+  useAppContext,
+  useScreenSizeContext,
+  useThemeCtx,
+} from '../../context/provider';
 
 import avatar from '../../assets/avatar.jpg';
 
@@ -44,6 +48,7 @@ const NavButton = ({
 
 const Navbar = () => {
   const { screenSize, setScreenSize } = useScreenSizeContext();
+  const { currentColor } = useThemeCtx();
 
   useEffect(() => {
     window.addEventListener('resize', setScreenSize);
@@ -56,6 +61,7 @@ const Navbar = () => {
   useEffect(() => {
     if (screenSize! < 900) return setActiveMenu(false);
     else setActiveMenu(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [screenSize]);
 
   const {
@@ -77,7 +83,7 @@ const Navbar = () => {
       <NavButton
         title='Menu'
         customFunc={() => setActiveMenu((s) => !s)}
-        color='blue'
+        color={currentColor}
         icon={<AiOutlineMenu />}
         dotColor=''
       />
@@ -85,20 +91,20 @@ const Navbar = () => {
         <NavButton
           title='Cart'
           customFunc={() => handleCart()}
-          color='blue'
+          color={currentColor}
           icon={<FiShoppingCart />}
         />
         <NavButton
           title='Chat'
           customFunc={() => handleChat()}
-          color='blue'
+          color={currentColor}
           icon={<BsChatLeft />}
           dotColor='#03c9d7'
         />
         <NavButton
           title='Notification'
           customFunc={() => handleNotification()}
-          color='blue'
+          color={currentColor}
           icon={<RiNotification3Line />}
           dotColor='#03c9d7'
         />

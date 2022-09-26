@@ -3,13 +3,18 @@ import { Link, NavLink } from 'react-router-dom';
 import { SiShopware } from 'react-icons/si';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-import { useAppContext, useScreenSizeContext } from '../../context/provider';
+import {
+  useAppContext,
+  useScreenSizeContext,
+  useThemeCtx,
+} from '../../context/provider';
 
 import { links } from '../../assets/dummy';
 
 const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useAppContext();
   const { screenSize } = useScreenSizeContext();
+  const { currentColor } = useThemeCtx();
 
   const handleCloseSideBar = () => {
     if (activeMenu && screenSize <= 900) return setActiveMenu(false);
@@ -53,6 +58,11 @@ const Sidebar = () => {
                       isActive
                         ? 'link'
                         : 'link text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray '
+                    }
+                    style={({ isActive }) =>
+                      isActive
+                        ? { backgroundColor: currentColor, color: '#fff' }
+                        : undefined
                     }>
                     {nested_link.icon}
                     <span className='capitalize'>{nested_link.name} </span>

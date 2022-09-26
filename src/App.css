@@ -1,8 +1,8 @@
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-react-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2/material.css';
 
 .sidebar {
   box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+  z-index: 9999999;
 }
 .nav-item,
 .navbar {
@@ -20,7 +20,10 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  display: none;
+  appearance: none;
+  height: 6px; /* vertical scrollbar  */
+  width: 6px; /* horizontal scrollbar  */
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgb(216, 216, 216);
